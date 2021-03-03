@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+   <head ln="en">
+
+      <meta charset="UTF-8">
+      <meta discription="sample project">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="sample.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+      
+
+   </head>
+   
+   <body>
+      
+      <!--...................................................................................-->
+      <app1>
+         <a id = "icon1" class = "icon" href="#" @click = "fun" onclick= "return false">
+            <img id = "vector1" src = "images/Vector1.png">
+         </a>
+         
+         <div id = "content1" >
+            <a href = "#" onclick="return false">Link1</a></br>
+            <a href = "#" onclick="return false">Link2</a></br>
+            <a href = "#" onclick="return false">Link3</a></br>
+         </div>
+
+      </app1>
+      <script src = "sample6.js"></script>
+
+      <a id = "logo" href = "#" onclick="return false">
+         <img id = "vector2" src = "images/Vector2.png" />
+         <img id = "vector3" src = "images/Vector3.png"/>
+         <img id = "vector4" src = "images/Vector4.png"/>
+         <img id = "vector5" src = "images/Vector5.png" />
+         <img id = "vector6" src = "images/Vector6.png" />
+      </a>
+
+      <app2>
+         <a href = "#" @click = "fun" onclick="return false">
+            <i id = "tanay">Tanay</i>
+   
+            <i id = "icon2" class = "icon">
+               <img id = "vector7" src = "images/Vector7.png" />
+            </i>
+         </a>
+
+         <div id = "content2">
+            <a href = "#" onclick="return false">Your Profile</a></br>
+            <a href = "#" onclick="return false">Logout</a></br>
+         </div>
+      </app2>
+      <script src = "sample7.js"></script>
+
+      
+      <a id = "icon3" class = "icon" href = "#" onclick="return false">
+         <img id = "vector8" src = "images/Vector8.png" />
+      </a>
+      <!--...........................................................................................................-->
+
+      <div id = "line0"></div>
+      
+
+      <!--.........................................................................................................-->
+      <image-slider>
+         
+         <a @click = "prev" href = "#" onclick="return false">
+            <i id = "icon4" class = "icon">
+               <img id = "vector9" src = "images/Vector7.png" />
+            </i>
+         </a>
+
+        <a @click = "next" href = "#" onclick="return false">
+         <i id = "icon5" class = "icon">
+            <img id = "vector10" src = "images/Vector7.png" />
+         </i>
+        </a>
+        
+        <i id = "text1">{{ curr }}/5</i>
+        <i id = "line1" class = "line"></i>
+        <i id = "line2" class = "line"></i>
+        <i id = "line3" class = "line"></i>
+        <i id = "line4" class = "line"></i>
+        <i id = "line5" class = "line"></i>
+
+         <transition-group name='fade' tag='div'>
+            <div
+             v-for="number in [currentNumber]"
+             :key='number'
+             >
+               <img id = "bottle"
+                   :src="currentImage"
+                   v-on:mouseover="stopRotation"
+                   v-on:mouseout="startRotation"
+                   />
+          </div>
+        </transition-group>
+
+      </image-slider>
+
+      <script src = "sample1.js"></script>
+
+
+      <!--............................................................................................................................-->
+      <div id = "block3">
+         Everyday rinse and reload
+      </div>
+
+      <div id = "block4">
+         Achieve your dream skin goal with this complete package of skincare products that will rejuvenate your day.
+      </div>
+
+      <div>
+         <i id = "block5">
+            <img id = "star1" class = "star" src = "images/star1.png" />
+            <img id = "star2" class = "star" src = "images/star1.png" />
+            <img id = "star3" class = "star" src = "images/star1.png" />
+            <img id = "star4" class = "star" src = "images/star1.png" />
+            <img id = "star5" class = "star" src = "images/star1.png" />
+         </i>
+
+         <i id = "block6">4.5</i>
+         <i >
+            <a id = "block7" href = "#" onclick="return false" >Click to read reviews</a>
+         </i>
+
+         <i id = "icon6" class = "icon">
+            <img id = "vector11" src = "images/Vector7.png" />
+         </i>
+         
+      </div>
+
+      <div>
+         <i id = "cost1"><span>&#8377; 899</span></i>
+         <i id = "cost2"><span>&#8377; 1299</span></i>
+      </div>
+         
+      <!--......................................................................................................-->  
+      <block>
+         <a id = "block8" @click = "fun" href = "#" onclick="return false">
+            <div id ="box1">
+               <img id = "star6" src = "images/star1.png" />
+               <span>MOST POPULAR</sapn>
+               <img id = "star7" src = "images/star1.png" />
+            </div>
+   
+            <div id = "box2">3 Months Pack(4 tubes)</div>
+   
+            <div id = "box3">Savings: &#8377; 200</div>
+            <div id = "box4"> 38% saved</div>
+            <div id = "box5">Best Results</div>
+            <div id = "box6">&#8377;595</div>
+            <div id = "box7">&#8377;795</div>
+         </a> 
+   
+         <div id = "mark1"> &#10003;</div>
+      </block>
+
+      <script src = "sample2.js"></script>   
+
+      <!--.........................................................................................................-->
+      <block_>
+         <a id = "block9" @click = "fun" href = "#" onclick="return false">
+            <div id = "box1">3 Months Pack(4 tubes)</div>
+            <div id = "box2">Saving: &#8377; 200</div>
+            <div id = "box3">12% saved</div>
+            <div id = "box4">&#8377;899</div>
+            <div id = "box5">&#8377;999</div>
+         </a>
+   
+         <div id = "mark2"> &#10003;</div>
+      </block_>
+
+      <script src = "sample3.js"></script>  
+
+      <!--...............................................................................................................-->
+
+      <a id = "block10" href = "#" onclick = "return false">
+         <div id = "box1">&#128722;</div>
+         <div id = "box2">ADD TO CART</div>
+      </a>
+      
+      <div id = "line6"></div>
+     
+      <!--........................................................................................................-->
+
+      <dev id = "block11">
+         Curated by experts, we've created an essential line of skin,
+          body and hair products for men. From head to toe,
+           we've got you covered Finally.
+      </dev>
+
+      <div id = "line7"></div>
+
+      <!--......................................................................-->
+       
+      <block12>
+         <i id = "box1">Benefit 1</i>
+         <a @click = "fun" href = "#" onclick="return false">
+           <i id = "mark3">&minus;</i>
+         </a>
+
+         <div id = "hidden1">
+            Lorem ipsum sit amet, consecetur adipiscing alit.
+            Maecenas non blandit orci. Nulla cursus justo eget sem 
+            viverra faucibus. Pellentesque em mi mibh. Pellentesque et
+            bibendum purus, tempus sollicitudin ligula. Donec
+            eleifend mi nec ipsum molestie, at pulvinar elit congue.
+            Phasellus fermentum tortor vel sagittis tristique. Ut 
+            molestie lorem quis tincidunt accumsan.
+
+            
+         </div>   
+      </block12>
+      <script src = "sample4.js"></script>
+
+      <div id = "line8"></div>
+
+      <!--.................................................................-->
+      
+      <block13>
+         <i id = "box1">Benefit 2</i>
+         <a @click = "fun" href = "#" onclick="return false">
+           <i id = "mark4">&plus;</i>
+         </a>
+      </block13>
+      <script src = "sample5.js"></script>
+
+      <div id = "line9"></div>
+
+      <!-------------------------------------------------------------------->
+
+      <div id = "block14">
+         Picked up from the himalayas
+      </div>
+
+      <div id = "block15"></div>
+
+      <div id = "block16"> </div>
+
+      <div id = "block17">
+         Curated by experts, we've created an essential line of skin,
+         body and hair products for men. From head to toe,
+         we've got you covered Finally.
+      </div>
+
+   </body>
+</html>
